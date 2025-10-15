@@ -7,3 +7,5 @@ class JobPosting(models.Model):
   company = models.CharField(max_length=100)
   salary = models.IntegerField()
 
+# CRUD Operations
+
