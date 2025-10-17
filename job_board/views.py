@@ -9,7 +9,7 @@ def index(request):
   }
   return render(request, 'job_board/index.html', context)
 
-def detail(request, pk):
+def job_detail(request, pk):
   job_posting = JobPosting.objects.get(pk=pk)
   context = {
     'posting': job_posting
