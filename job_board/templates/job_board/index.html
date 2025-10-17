@@ -1,0 +1,11 @@
+{% load humanize %}
+
+<html>
+  <body>
+    <ul>
+      {% for posting in job_postings %}
+        <li>{{ posting.title|title }} | {{ posting.description }} | ${{ posting.salary|intcomma }} </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
